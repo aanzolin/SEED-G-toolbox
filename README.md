@@ -7,6 +7,7 @@ multivariate autoregressive (MVAR) models as a generator filter to provide a ben
 of the time series.
 
 ![](/Figure1.jpg) 
+
 Figure 1
 
 ### 1.Ground-truth model generation.
