@@ -6,8 +6,7 @@ multivariate autoregressive (MVAR) models as a generator filter to provide a ben
 **Figure 1** synthesizes the simulated EEG data generation process, including the definition of the ground-truth and the generation 
 of the time series.
 
-![](/Figure1.jpg) 
-
+![](/flowchart.jpg) 
 Figure 1
 
 ### 1.Ground-truth model generation.
