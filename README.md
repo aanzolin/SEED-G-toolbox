@@ -5,6 +5,7 @@ In the proposed toolbox, the generation of pseudo-EEG data that reproduce well-k
 multivariate autoregressive (MVAR) models as a generator filter to provide a benchmark for functional connectivity estimates. 
 **Figure 1** synthesizes the simulated EEG data generation process, including the definition of the ground-truth and the generation 
 of the time series.
+
 ![](/flowchart1.jpg) 
 Figure 1
 
