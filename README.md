@@ -102,7 +102,7 @@ FPR = 2%
 
 FNR = 50%
 
-![](demo/PDC application/results/sim_dataset_1_500samples_1trial.jpg)
+![](/demo/PDC_application/results/sim_dataset_1_500samples_1trial.jpg)
 
 
 ### References 
