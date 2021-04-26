@@ -7,6 +7,7 @@ multivariate autoregressive (MVAR) models as a generator filter to provide a ben
 of the time series.
 
 ![](/flowchart.jpg) 
+
 Figure 1
 
 ### 1.Ground-truth model generation.
@@ -64,6 +65,44 @@ The functions from the following tools, relevant for SEED-G have been included i
 * FiedTrip [2]. The full package is available at https://www.fieldtriptoolbox.org/download/ 
 * Multi-Variate Granger Causality Toolbox (MVGC) [3]. The full package is available at https://users.sussex.ac.uk/~lionelb/MVGC/html/mvgchelp.html 
 * New York Head model: the forward model included in the toolbox and available on the ICBM-NY platform [4].
+* AsympPDC Package. The full package is available at: https://www.lcs.poli.usp.br/~baccala/pdc/CRCBrainConnectivity/AsympPDC/ [5].
+
+
+### Demo
+
+This folder contains MATLAB scripts to run the functions in the `main` repository. 
+`run_generation.m`, `run_generation_intertrial_variability.m`, `run_generation_time_varying_connectivity.m`, `run_generation_with_volume_conduction.m` are examples of framework to run (respectively) the functions `simulatedData_generation.m`, `simulatedData_generation_intertrial_var.m`, `simulatedData_generation_time_varying_connectivity.m` `simulatedData_generation_with_volume_conduction`.
+
+
+## PDC application
+
+`run_compute_pdc_on_simulated_data` compute the PDC estimation on three generated datasets with similar caracteristics, except for the lenght of the signals. 
+
+In particular, for all of them we imposed the following parameters
+
+* number of time series = 10
+* number of trials = 1
+* data type = scalp
+* SNR = 10
+* density of the imposed network = 20%
+
+while the number of samples was:
+
+* 500 for sim_dataset_1
+* 1500 for sim_dataset_2
+* 2500 for sim_dataset_3.
+
+The three generated datasets used in this example are in the folder '\SEED-G toolbox\demo\PDC application\simulated data'.
+
+The results of this basic example showed how higher number of samples available for the connectivity estimation led to better performace in terms of false positive and false negative. In Figure 2-4 we reported the imposed model and the PDC estimates in each of the three simulated cases. 
+
+# Case 1: 500 samples
+
+FPR = 2%
+
+FNR = 50%
+
+![](/demo/PDC application/results/sim_dataset_1_500samples_1trial.jpg) 
 
 
 ### References 
@@ -76,6 +115,6 @@ The functions from the following tools, relevant for SEED-G have been included i
 
 [4]	Y. Huang, L. C. Parra, and S. Haufe, “The New York Head—A precise standardized volume conductor model for EEG source localization and tES targeting,” NeuroImage, vol. 140, pp. 150–162, Oct. 2016, doi: 10.1016/j.neuroimage.2015.12.019.
 
-
+[5]	L. A. Baccal´a and K. Sameshima. Partial directed coherence: a new concept in neural structure determination. Biological Cybernetics, 84:463–74, 2001a.
 
 
