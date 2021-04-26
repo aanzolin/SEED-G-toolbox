@@ -56,6 +56,12 @@ Depending on the type of real sources used for the signal generation, SEED-G can
   * ROIs lables (e.g. 'Brodmann area 19_L' 'Brodmann area 19_R')
   * Sensors labels (e.g. 'C3' 'C4' 'CP1' 'CP2')
 
+The script `run_generation_with_volume_conduction.m` also generates a 3D plot showing the position of the centroid of the selected Broadmann areas as in the exampl/e in Figure 2.
+
+![](/demo/centroids_broadmann.jpg)
+
+Figure 2
+
 
 # Dependencies
 
@@ -94,7 +100,7 @@ while the number of samples was:
 
 The three generated datasets used in this example are in the folder '\SEED-G toolbox\demo\PDC application\simulated data'.
 
-The results of this basic example showed how higher number of samples available for the connectivity estimation led to better performace in terms of false positive and false negative. In Figure 2-4 we reported the imposed model and the PDC estimates in each of the three simulated cases. 
+The results of this basic example showed how higher number of samples available for the connectivity estimation led to better performace in terms of false positive and false negative. In Figure 3-5 we reported the imposed model and the PDC estimates in each of the three simulated cases. 
 
 ### Case 1: 500 samples
 
@@ -103,7 +109,7 @@ FPR = 2%
 FNR = 50%
 
 ![](/demo/PDC_application/results/sim_dataset_1_500samples_1trial.jpg)
-Figure 2.
+Figure 3.
 
 ### Case 2: 1500 samples
 
@@ -112,7 +118,7 @@ FPR = 1%
 FNR = 11%
 
 ![](/demo/PDC_application/results/sim_dataset_2_1500samples_1trial.jpg)
-Figure 3.
+Figure 4.
 
 ### Case 3: 2500 samples
 
@@ -121,7 +127,7 @@ FPR = 0%
 FNR = 6%
 
 ![](/demo/PDC_application/results/sim_dataset_3_2500samples_1trial.jpg)
-Figure 3.
+Figure 5.
 
 ## References 
 
