@@ -116,9 +116,9 @@ Figure 3.
 
 ### Case 3: 2500 samples
 
-FPR = 2%
+FPR = 0%
 
-FNR = 50%
+FNR = 6%
 
 ![](/demo/PDC_application/results/sim_dataset_3_2500samples_1trial.jpg)
 Figure 3.
