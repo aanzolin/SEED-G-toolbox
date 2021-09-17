@@ -180,7 +180,7 @@ for ttr=1:Trials
         end
         
         [Y,E,mtrunc]=var_to_tsdata(ModelDel_ST,Sw,DataLength,Singtr,mtrunc,decayfac);
-        Ctr=find(Y>SigLim);
+        Ctr=find(abs(Y)>SigLim);
         
         if ~isempty(Ctr)
             continue
