@@ -124,13 +124,13 @@ while flag==1
         [Model, DelayMatrix]=get_ConnectivityModel(A,val_Range, MinDelta, Del_Range);
         %%% Lag separation (ch x ch x lag)
         ModelDel=rearrangeModel(Del_Range,Model,DelayMatrix);
+        Nod = size(Model,1);
         
         switch AR_choice
             case {0}
                 ARpos = inDiag;
             case {1}
-                % Check for isolated nodes
-                Nod = size(Model,1);
+                % Check for isolated nodes          
                 Dbin = distance_bin(A);
                 Dbin(find(eye(Nod)))=Inf;
                 
