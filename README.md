@@ -70,7 +70,8 @@ The functions from the following tools, relevant for SEED-G have been included i
 * Brain Connectivity Toolbox (BCT) [1]. The full package is available at: https://sites.google.com/site/bctnet/  
 * FiedTrip [2]. The full package is available at https://www.fieldtriptoolbox.org/download/ 
 * Multi-Variate Granger Causality Toolbox (MVGC) [3]. The full package is available at https://users.sussex.ac.uk/~lionelb/MVGC/html/mvgchelp.html 
-* New York Head model: the forward model included in the toolbox and available on the ICBM-NY platform [4].
+* New York Head model: the forward model included in the toolbox and available on the ICBM-NY platform [4]. 
+>Warning!_ Some of the biggest file, containing the head models, are missing in this release. Extended dependencies can be found at https://zenodo.org/record/5500678#.YTwweZ1KiF4.
 * AsympPDC Package. The full package is available at: https://www.lcs.poli.usp.br/~baccala/pdc/CRCBrainConnectivity/AsympPDC/ [5].
 
 
