@@ -173,7 +173,7 @@ while flag==1
         
         [Y,E,mtrunc]=var_to_tsdata(ModelDel,Sw,DataLength,Singtr,mtrunc,decayfac);
         
-        Ctr=find(Y>SigLim);
+        Ctr=find(abs(Y)>SigLim);
         
         if ~isempty(Ctr)
             continue
