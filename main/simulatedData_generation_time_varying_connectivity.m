@@ -128,7 +128,7 @@ while flag==1
         end
         
         [Y,E]=var_to_tsdata_complete(ModelDel,Sw,DataLength,Singtr,mtrunc,decayfac);
-        Ctr=find(Y>SigLim);
+        Ctr=find(abs(Y)>SigLim);
         
         if ~isempty(Ctr)
             continue
